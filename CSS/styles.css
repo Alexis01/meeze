@@ -1,0 +1,444 @@
+
+
+body{
+background-color:#ffffff;
+margin: 0;
+font: normal 0.7em Arial;
+
+}
+
+.contenedor{
+	width: 80%;/*anchura*/
+	height: 80%;
+	margin: auto;/*Fondo*/
+	border: 0px solid red;/*borde rojo*/
+	
+	margin-top: 30px;/*margen superior*/
+	min-width: 600px;
+	min-height: 800px;
+	box-shadow: 5px 5px 50px 5px #00005A;
+}
+#contenedor_login{
+	background-color:#ffffff; 
+	position: relative;
+	width: 70%;
+	height: 50%;
+	float: inherit; 
+	min-width: 300px;
+	min-height: 300px;
+	margin-left: 15%;
+	height: 800px;
+   
+}
+#contenedor_izq{
+	position: relative;
+	height: 100%;
+	float: left;
+	width: 50%;
+	background-color: #9e9fbf;
+	
+	
+}
+#contenedor_der{
+	position: relative;
+	height: 100%;
+	float: right;	
+	width: 50%;
+	background-color: #9e9fbf;
+	
+}
+.contenedor_generico{
+	position:relative;
+	width: 100%;
+	float: inherit;
+	height: 727px;
+	background: #9e9fbf;
+	
+}
+.cabecera{
+	position: relative;
+	background-color: white;
+	
+}
+#logo{
+	position: relative;
+	width: 100%;
+	margin-top: 20%;
+}
+#logo-cabecera{
+	float: left;
+	margin-left: 3%;
+	margin-top: 3px;
+}
+#textFooter{
+	margin: auto;
+	margin-left: 35%;
+}
+#form_logo{
+	margin: auto;
+	position: relative;
+	margin-left: 30%;
+	margin-top: 10%;
+}
+.footer{
+	position: relative;	
+	background-color:#5e6eb2;
+	
+	height:50px;
+	margin-top: -15px;
+}
+#nav-cabecera{
+	margin-top: 3%;
+}
+#table-container{
+	position: relative;
+}
+
+#label-button{
+	position: relative;
+	margin-left: 65%;
+}
+#boton-cabezera{
+	margin-left: 80%;
+width: 15%;
+height: 25px;
+}
+#p-cabezera{
+	width: 58%;
+	margin-left: 70%;
+	color:#4e57c0;
+	font-size:15px;
+}
+
+/* START NAV MENU */
+nav {
+  background-color:#ffffff;
+  height:40px;
+}
+ 
+ 
+nav ul {
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+ 
+}
+ 
+nav li ul { 
+  display: none; 
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  background: #9e9fbf;
+  color: #ffffff;  
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  min-width: 150px;/*Una anchura min, para que todas la pestañas sean iguales*/
+  max-width:100%;
+  text-align:center;
+ 
+}
+ 
+nav ul li a:hover { 
+  background: #9e9fbf; 
+}
+ 
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+ 
+nav li:hover li {
+  float: none;
+  font-size: 11px;
+ 
+}
+ 
+nav li:hover a { 
+  background: #9e9fbf; 
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+ 
+nav li:hover li a:hover { 
+  background: #9e9fbf; 
+}
+ 
+nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* END NAV MENU */
+
+
+
+/*------------------------------------------------------------------------*/
+
+/* AÑADIDO PARA RECORDAR CONTRASEÑA(INICIO)*/
+
+#recordarContrasena{ /*Div que contiene el mensaje pricipal*/ /*para ver parcialmente usar -> overflow:hidden:*/
+	
+	/*tamaño fijo para el cuadro*/
+	width: 60%;
+	/*Posicionamiento relativo*/
+	position: relative;
+	top: 2%;
+	left: 11%;
+	/*Bordes*/
+	border: 6px solid #6EA9C6;
+	/*Color de fondo*/
+	background-color: #93CAE6;
+	/*padding*/
+	padding-left:3% ;
+	padding-top: 1%;
+	padding-bottom: 1%;	
+
+}
+
+#recordarContrasena b{
+	/*Formato de fuente*/
+	font-family: Century;
+	font-size:18px;
+	color:#333333;
+}
+
+
+#insertarCorreo{
+
+	/*Posicionamiento relativo*/
+	position: relative;
+	/*Bordes*/
+	border: 3px solid #7D7D7D;
+	/*Color de fondo*/
+	background-color:#D1D1D1;
+	/*padding*/
+	padding: 4px 6px 4px 6px;
+	/*margin*/
+	margin-top: 30px;
+	/*tamaño*/
+	width: 75%;
+
+}
+
+#recordarContrasena label{
+
+	/*Posicionamiento relativo*/
+	position: relative;
+	display: block;
+	
+	/*Formato fuente*/
+	font: normal 0.7em Arial;
+	color:#484848;
+	
+	/*margin*/
+	margin: 3px;
+}
+
+#botonEnviar{
+
+	/*Posicionamiento relativo*/
+	position: relative;
+
+	/*Bordes*/
+	border: 2px solid #7D7D7D;
+	/*Color de fondo*/
+	background-color:#4c49b4;
+	/*padding*/
+	padding: 3px 5px 3px 5px;
+	/*margin*/
+	margin-left: 38%;
+	width: 25%;
+	/*Formato de fuente*/
+	color:#D1D1D1;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*AÑADIDO PARA RECORDAR CONTRASEÑA(CIERRE)*/
+
+/*----------------------------------------------------------------------------------------*/
+
+/*añadido para contraseña recordada (INICIO)*/
+
+#contrasenaRecordada{/*Div que contiene el mensaje pricipal*/ /*para ver parcialmente usar -> overflow:hidden:*/
+	
+	/*tamaño fijo para el cuadro*/
+	width: 60%;
+	height:25%;
+	/*Posicionamiento relativo*/
+	position: relative;
+	top:2%;
+	left: 10%;
+	/*Bordes*/
+	border: 4px solid #6EA9C6;
+	/*Color de fondo*/
+	background-color: #93CAE6;
+	/*padding*/
+	padding-top: 5%;
+	padding-left: 5%;
+	/*Formato de fuente*/
+	font-family: Century;
+	font-size:18px;
+	color:#333333;
+
+}
+
+
+/*añadido para contraseña recordada (CIERRE)*/
+/*------------------------------------USUARIOS------------------------------------------------*/
+#logoPerfil{
+	margin-top: 20px;
+}
+
+/*STYLES CONGOS*/
+
+#formulario{
+	margin-left: 10%;
+	margin-top: 15%;
+}
+#formulario2{
+	margin: 0 auto;
+}
+/*td{
+	height: 30px;
+	width:  300px;
+}*/
+form{
+	
+	width: 45%;
+	position: relative;;
+	
+	border: 1px solid	#4e57c0;
+	
+	margin-left:10%;
+	border-radius:8px; 
+-moz-border-radius:8px; /* Firefox */ 
+-webkit-border-radius:8px;
+	
+}
+table{
+	text-align: center;
+	width: 45%;
+	position: relative;;
+	
+	border: 6px solid	#4e57c0;
+	
+	margin-left:10%;
+	border-radius:8px; 
+-moz-border-radius:8px; /* Firefox */ 
+-webkit-border-radius:8px;
+}
+#logoPerfil{
+	padding-left: 20%;
+	width: 120px;
+	height: 160px;
+}
+
+
+
+
+#botones{
+	width: 50%;
+	height: 3%;
+	margin-top: 5%;
+	margin-left: 20%;
+}
+
+p1{
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+#titulo,h2
+{
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+input{
+	width: 50%;
+	margin-top: 5%;
+	margin-left: 10%;
+}
+
+#calendario{
+	
+	
+}
+
+#imgEvento{
+	margin-left: 10%;
+	width: 50%;
+	height: 60%
+}
+/*	 MAQUETACIÓN PARA EL CALENDARIO*/
+#dia{
+	width:14%;
+	background-color: #888;
+	-webkit-border-radius: 25px;
+}
+
+textarea
+{
+	line-height: 3;
+	width: 90%;
+	height: 50%;
+	
+}
+
+.boton { 
+   background: #FFFFFF; 
+   position: relative;
+   float: right;
+}
+.headers{
+	margin-left: 10%;
+}
+.boton0{
+	background: #9e9fbf;
+	border-radius: 8px 8px 0px 0px;
+}
+.boton1{
+	background: #b6b6b6;
+	border-radius: 8px 8px 0px 0px;
+}
+#calendarioV2{
+	width: 50%;
+	height: 50%;
+}
+#objectsId{
+	height: 2%;
+}
+#cabtableid{
+	height: 4%;
+	color: white;
+}
+#descuadrado{
+	margin-top: -15px;
+}
+h3{
+	
+	margin-left: 10%;
+}
+.radioButons{
+	width:40%;
+}
+#fondo-img{
+	 z-index: -999;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+}
